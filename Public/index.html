@@ -25,7 +25,7 @@
             <li><a href="#home" class="active">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#works">Work</a></li>
-            <li><a href="#clients">Clients</a></li>
+            <li><a href="#c">Clients</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contactUs">Contact Us</a></li>
         </ul>
@@ -60,7 +60,7 @@
 
                     <img class="profile_smiley absolute" src="./img/smiley_1.svg" alt="">
 
-                    <img src="./img/Star.svg" alt="" class="start1 absolute">
+                    <img src="./img/star.svg" alt="" class="start1 absolute">
                     <img src="./img/star_2.svg" alt="" class="start2 absolute">
                     <img src="./img/star_3.svg" alt="" class="start3 absolute">
 
@@ -230,21 +230,25 @@
                 <div class="circle circle3"></div>
             </div>
             <div class="container">
-                <div class="inputBox">
-                    <input type="text" name="" id="" placeholder="Your name...." />
-                </div>
+                <form action="" id="contactForm">
+                    <div class="alert">Your message sent</div>
 
-                <div class="inputBox">
-                    <input type="email" name="" id="" placeholder="Your Email....." />
-                </div>
+                    <div class="inputBox">
+                        <input type="text" id="name" placeholder="Your name...." />
+                    </div>
 
-                <div class="inputBox">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                </div>
+                    <div class="inputBox">
+                        <input type="email" id="emailid" placeholder="Your Email....." />
+                    </div>
 
-                <div class="inputBox">
-                    <button type="button">Submit</button>
-                </div>
+                    <div class="inputBox">
+                        <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+
+                    <div class="inputBox">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
             </div>
         </section>
 
@@ -268,6 +272,13 @@
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/swiperScript.js"></script>
+
+    <!-- firebase CDN -->
+
+    <!-- Insert this script at the bottom of the HTML, but before you use any Firebase services -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="./js/mail.js"></script>
 </body>
 
 </html>
